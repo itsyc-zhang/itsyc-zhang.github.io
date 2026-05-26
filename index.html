@@ -1,40 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Yichi Zhang</title>
+
   <style>
-    body {
-      background: #111;
-      color: white;
-      font-family: Arial;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0d0d0d;
+      color: white;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      padding: 20px 60px;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      opacity: 0.8;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10%;
+    }
+
+    .hero h1 {
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #aaa;
+      max-width: 600px;
+      font-size: 22px;
+    }
+
+    section {
+      padding: 120px 10%;
+      border-top: 1px solid #222;
+    }
+
+    h2 {
+      font-size: 42px;
+      margin-bottom: 30px;
     }
 
     .card {
-      text-align: center;
+      background: #161616;
+      padding: 30px;
+      border-radius: 20px;
+      margin-top: 20px;
     }
 
-    h1 {
-      font-size: 48px;
+    .card h3 {
       margin-bottom: 10px;
     }
 
-    p {
+    .card p {
       color: #aaa;
-      font-size: 18px;
     }
+
   </style>
 </head>
 
 <body>
-  <div class="card">
+
+  <nav>
+    <div>Yichi Zhang</div>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
     <h1>Yichi Zhang</h1>
-    <p>Personal Website</p>
-  </div>
+
+    <p>
+      Transportation Planning Researcher focused on
+      sustainable mobility, resilience, and travel behavior.
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+
+    <div class="card">
+      <p>
+        I am interested in transportation planning,
+        sustainable mobility, and resilience research.
+      </p>
+    </div>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+
+    <div class="card">
+      <h3>Travel Behavior</h3>
+      <p>
+        Understanding how mobility patterns evolve under disruptions.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Urban Resilience</h3>
+      <p>
+        Researching resilience-risk-sustainability nexus in cities.
+      </p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="card">
+      <h3>Arizona State University</h3>
+      <p>
+        Transportation Planning & Research
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <div class="card">
+      <p>Email: your@email.com</p>
+    </div>
+  </section>
+
 </body>
 </html>
-
